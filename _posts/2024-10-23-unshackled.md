@@ -1,6 +1,6 @@
-#Musings of a free mind
-##Poetry corner
-###UNSHACKLED
+# Musings of a free mind
+## Poetry corner
+### UNSHACKLED
 -23rd October 2024
 Growing up I wanted to be
 A successful woman, a leading light.
