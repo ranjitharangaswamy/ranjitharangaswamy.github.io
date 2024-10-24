@@ -1,0 +1,24 @@
+# Musings of a free mind
+## Poetry corner
+### UNSHACKLED
+-23rd October 2024
+Growing up I wanted to be
+A successful woman, a leading light.
+My mother's words rung again,
+"Don't be shackled like me".
+Her words sharp but bright,
+Often rid of my impulses free rein
+
+I chased my dreams with fierce intent,
+And broke the chains that she'd endured.
+I rose up, a phoenix bent,
+On shattering the glass that she'd endured.
+My path unwinding, a journey mine,
+I danced with freedom, no longer confined.
+
+But now I look back on her face,
+And see the strength in her steady gaze.
+A woman bound by circumstance and time,
+Yet still she whispered "fly, my child, be free in your prime".
+I realized then, with a newfound sight,
+Her words were not a warning, but a guiding light.
