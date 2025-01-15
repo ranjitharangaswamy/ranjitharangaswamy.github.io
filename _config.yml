@@ -18,6 +18,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-pdf
 
 titles_from_headings:
   strip_title: true
@@ -29,3 +30,6 @@ defaults:
       type: post
     values:
       tags: Other
+
+include
+  - _assets
