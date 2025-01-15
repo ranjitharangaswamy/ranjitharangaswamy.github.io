@@ -31,5 +31,5 @@ defaults:
     values:
       tags: Other
 
-include
+include:
   - _assets
