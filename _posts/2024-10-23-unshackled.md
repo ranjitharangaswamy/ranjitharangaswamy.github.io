@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Musings of a free mind
 ## Poetry corner
 ### UNSHACKLED
@@ -24,3 +25,5 @@ A woman bound by circumstance and time,
 Yet still she whispered "fly, my child, be free in your prime".
 I realized then, with a newfound sight,
 Her words were not a warning, but a guiding light.
+=======
+>>>>>>> Stashed changes
