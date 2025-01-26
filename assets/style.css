@@ -1,17 +1,82 @@
+/* Base styles */
+body,
+.navbar,
+.container,
+.header,
+.name,
+.institution {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #777;
+    background-color: #fff9f2;
+}
+
+/* Link styles */
+a {
+    color: #007;
+    text-decoration: underline dotted;
+}
+
+a:hover {
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #fff9f2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-collapse {
+    background-color: #fff9f2;
+}
+
+/* Container styles */
+.container {
+    background-color: #fff9f2;
+}
+
+main.container {
+    background-color: #fff9f2;
+    position: relative;
+    z-index: 1;
+}
+
+/* Typography */
+.header {
+    color: #111;
+    font-size: 16pt;
+}
+
+.name {
+    color: #111;
+    font-size: 14pt;
+}
+
+/* Institution styles */
+.institution {
+    color: #111;
+    font-size: 12px;
+}
+
+.years {
+    color: #007;
+    font-size: 11px;
+}
+
 .instilogo {
     height: 50px;
     filter: grayscale(20%);
 }
 
-a:hover {
-    /* font-weight: 400; */
-    text-decoration: none;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    /* color: #444; */
-}
-
-
+/* Utility classes */
 .noter {
     font-size: 9pt;
 }
@@ -22,6 +87,25 @@ a:hover {
 
 .tag {
     padding-right: 2px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: #fff9f2 !important;
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 0.25rem 0.75rem;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+    }
 }
 
 .confshort {
@@ -83,3 +167,7 @@ a:hover {
           color: #111;
           text-decoration: underline;
     } */
+
+.poem {
+    font-family: 'Nunito', sans-serif !important;
+}
