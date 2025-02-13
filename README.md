@@ -1,1 +1,1 @@
-Ranjitha's simple and elegant one-page theme for research.
+Ranjitha's website encapsulates her professional background, research interests, and hobbies.
