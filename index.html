@@ -55,7 +55,7 @@
           <section class="introduction mb-5">
             <h1 class="h2 mb-4">About Me</h1>
             <p>Seasoned Litigator | Passionate about Justice and Legal Innovation</p>
-            <p>I am an advocate licensed to practice law in India since 2020. I graduated with a Bachelor in Arts and Bachelor in Law (Honours) professional degree from 
+            <p>I am a lawyer licensed to practice law in India since 2020. I graduated with a Bachelor in Arts and Bachelor in Law (Honours) professional degree from 
               <a href="https://christuniversity.in/academics/main-campus/school-of-law/">
                 School of Law, CHRIST University
               </a>, Bengaluru, Karnataka, India. I did my undergraduate dissertation thesis on Comparative analysis of Anti-suit injunctions across multiple jurisdictions.</p>
@@ -79,15 +79,59 @@
   <style>
     body {
       background-color: #fff9f2;  /* Light yellow color */
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     }
     
     .navbar {
-      background-color: #fff9f2;  /* Same light yellow color */
+      background: linear-gradient(to right, #fff9f2, #fff5e6, #fff9f2);
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: #2c3e50 !important;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      color: #e67e22 !important;
+    }
+
+    .nav-item {
+      position: relative;
+      margin: 0 0.5rem;
+    }
+
+    .nav-link {
+      color: #34495e !important;
+      font-weight: 500;
+      padding: 0.5rem 0.8rem !important;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #e67e22 !important;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background-color: #e67e22;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
     }
     
     .container {
-      background-color: #fff9f2;  /* Same light yellow color */
+      background-color: #fff9f2;
     }
 
     a.btn-primary {
@@ -109,6 +153,15 @@
     a.btn-primary:active {
       transform: translateY(1px);
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 991.98px) {
+      .nav-link::after {
+        display: none;
+      }
+      .nav-item {
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </html>
