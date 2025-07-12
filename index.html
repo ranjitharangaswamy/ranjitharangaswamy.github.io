@@ -28,8 +28,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="hobbiesblog.html">Hobbies & Personal Blog</a>
-            <a class="nav-item nav-link" href="research-proposal.html">Research & Publications</a>
+            <a class="nav-item nav-link" href="hobbiesblog.html">Personal Blog</a>
+            <a class="nav-item nav-link" href="research-proposal.html">Research & Projects</a>
             
         </div>
       </div>
@@ -39,37 +39,78 @@
       <div class="row pt-5">
         <!-- Left sidebar with personal info -->
         <aside class="col-md-4 pt-5">
-          <div class="position-sticky" style="top: 2rem;">
-            <img src="images/headshot.png" class="img-fluid rounded mb-4" alt="Ranjitha Rangaswamy">
+          <div class="profile-card position-sticky" style="top: 2rem;">
+            <div class="profile-image-container">
+              <img src="images/headshot.png" class="profile-image" alt="Ranjitha Rangaswamy">
+              <div class="profile-overlay"></div>
+            </div>
             
-            <section class="contact-links mb-4">
-              <a class="d-block mb-2" href="mailto:ranjitha.rangaswamy@gmail.com">Email address</a>
-              <a class="d-block mb-2" href="https://github.com/ranjitharangaswamy">Github profile</a>
-              <a class="d-block mb-2" href="https://www.linkedin.com/in/ranjitha-n-rangaswamy/">LinkedIn</a>
+            <div class="profile-info">
+              
+              <p class="profile-title">MS HCDE Student | Lawyer</p>
+              <p class="profile-location">"Make the law more accessible and Human-Centered"</p>
+            </div>
+            
+            <section class="contact-links">
+              <a class="contact-link" href="mailto:ranjitha.rangaswamy@gmail.com">
+                <i class="contact-icon">📧</i>
+                <span>Email</span>
+              </a>
+              <a class="contact-link" href="https://github.com/ranjitharangaswamy">
+                <i class="contact-icon">💻</i>
+                <span>GitHub</span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/ranjitha-n-rangaswamy/">
+                <i class="contact-icon">💼</i>
+                <span>LinkedIn</span>
+              </a>
             </section>
           </div>
         </aside>
 
         <!-- Main content area -->
         <article class="col-md-8 pt-5">
-          <section class="introduction mb-5">
-            <h1 class="h2 mb-4">About Me</h1>
-            <p>Seasoned Litigator | Passionate about Justice and Legal Innovation</p>
-            <p>I am a lawyer licensed to practice law in India since 2020. I graduated with a Bachelor in Arts and Bachelor in Law (Honours) professional degree from 
-              <a href="https://christuniversity.in/academics/main-campus/school-of-law/">
-                School of Law, CHRIST University
-              </a>, Bengaluru, Karnataka, India. I did my undergraduate dissertation thesis on Comparative analysis of Anti-suit injunctions across multiple jurisdictions.</p>
-            <p>I love exploring the interplay of law with other disciplines, such as user experience design and research, artificial intelligence, and technology policy.</p>
-            </section>
-          <section class="research-proposal mb-5">
-            <h2 class="h3 mb-4">Research Proposal</h2>
-            <p class="text-muted">January 14, 2025 | By Ranjitha Naruganahalli Rangaswamy</p>
-            <p>I'm currently working on a research proposal on AI stereotyping in criminal justice systems, focusing on comparative analysis between the United States and India.</p>
-            <a href="research-proposal.html" class="btn btn-primary">Email me for a copy</a>
+          <section class="hero-section">
+            <div class="hero-content">
+              <h1 class="hero-title">Designing Justice Through Human-Centered Innovation</h1>
+              <p class="hero-subtitle">Licensed Indian Litigator pivoting into Human Centered Design and Engineering • Passionate about Justice and Legal Innovation • Committed to fostering equitable, accessible environments, particularly through legal design to empower people and create lasting impact.</p>
+            </div>
+          </section>
+
+          <section class="about-section">
+            <div class="content-card">
+              <h2 class="section-title">About Me</h2>
+              <div class="about-content">
+                
+                <div class="education-card">
+                  <h3 class="card-title">Education</h3>
+                  <p>•Masters in HCDE' 2027 at <a href="https://www.hcde.washington.edu/ms" class="highlight-link">University of Washington</a></p> 
+                  <p>•Bachelor of Arts and Bachelor of Law (Honours) from 
+                    <a href="https://christuniversity.in/academics/main-campus/school-of-law/" class="highlight-link">
+                      School of Law, CHRIST University,</a> Bengaluru, Karnataka, India. Defended my undergraduate dissertation thesis on Comparative analysis of Anti-suit injunctions across multiple jurisdictions.</p>
+                </div>
+
+                <div class="interests-card">
+                  <h3 class="card-title">Skills & Interests</h3>
+                  <p>•I love exploring the interplay of law with other disciplines, such as user experience design and research, artificial intelligence, and technology policy.</p>
+                  <p>•I am a licensed Indian litigation lawyer with 2+ years of legal and qualitative research experience.</p>
+                </div>
+              </div>
+            </div>
           </section>
         </article>
       </div>
     </main>
+
+    <footer class="copyright-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright-text">© 2024 Ranjitha Rangaswamy. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -78,24 +119,60 @@
   </body>
   <style>
     body {
-      background-color: #fff9f2;  /* Light yellow color */
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: linear-gradient(135deg, #fff9f2 0%, #fff5e6 50%, #fff9f2 100%);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
     }
     
+    /* Navigation */
     .navbar {
-      background: linear-gradient(to right, #fff9f2, #fff5e6, #fff9f2);
-      padding: 1rem 0;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(135deg, rgba(255, 249, 242, 0.98), rgba(255, 245, 238, 0.98));
+      backdrop-filter: blur(15px);
+      padding: 1.2rem 0;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid rgba(230, 126, 34, 0.1);
+      position: relative;
+    }
+
+    .navbar::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(230, 126, 34, 0.3), transparent);
     }
 
     .navbar-brand {
-      font-weight: 600;
+      font-weight: 800;
       color: #2c3e50 !important;
-      transition: color 0.3s ease;
+      font-size: 1.6rem;
+      transition: all 0.3s ease;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .navbar-brand:hover {
       color: #e67e22 !important;
+      transform: translateY(-2px);
+      text-shadow: 0 2px 4px rgba(230, 126, 34, 0.3);
+    }
+
+    .navbar-brand::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #e67e22, #f39c12);
+      transition: width 0.3s ease;
+    }
+
+    .navbar-brand:hover::after {
+      width: 100%;
     }
 
     .nav-item {
@@ -105,56 +182,319 @@
 
     .nav-link {
       color: #34495e !important;
-      font-weight: 500;
-      padding: 0.5rem 0.8rem !important;
+      font-weight: 600;
+      padding: 0.8rem 1.2rem !important;
+      border-radius: 12px;
       transition: all 0.3s ease;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
     }
 
     .nav-link:hover {
       color: #e67e22 !important;
+      background: linear-gradient(135deg, rgba(230, 126, 34, 0.15), rgba(243, 156, 18, 0.1));
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(230, 126, 34, 0.2);
     }
 
-    .nav-link::after {
+    .nav-link.active {
+      background: linear-gradient(135deg, rgba(230, 126, 34, 0.2), rgba(243, 156, 18, 0.15));
+      color: #e67e22 !important;
+      box-shadow: 0 2px 8px rgba(230, 126, 34, 0.3);
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transform: translateX(0);
+      animation: slideInFromLeft 0.8s ease-out 0.4s both;
+    }
+
+    .profile-card:hover {
+      transform: translateX(10px) translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-image-container {
+      position: relative;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-overlay {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, rgba(230, 126, 34, 0.2), rgba(52, 73, 94, 0.2));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .profile-image-container:hover .profile-overlay {
+      opacity: 1;
+    }
+
+    .profile-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .profile-name::after {
+      display: none;
+    }
+
+    .profile-title {
+      font-size: 1rem;
+      color: #e67e22;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-location {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin-bottom: 0;
+    }
+
+    /* Contact Links */
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .contact-link:hover {
+      background: rgba(230, 126, 34, 0.1);
+      color: #e67e22;
+      transform: translateX(5px);
+      text-decoration: none;
+    }
+
+    .contact-icon {
+      font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      margin-bottom: 3rem;
+      animation: slideInFromLeft 0.8s ease-out;
+    }
+
+    .hero-content {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 249, 242, 0.95));
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 3rem;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      transform: translateX(0);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .hero-content:hover {
+      transform: translateX(10px);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #2c3e50, #e67e22);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #34495e;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    /* Content Cards */
+    .content-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 249, 242, 0.95));
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      margin-bottom: 2rem;
+      transform: translateX(0);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: slideInFromRight 0.8s ease-out 0.2s both;
+    }
+
+    .content-card:hover {
+      transform: translateX(-10px);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
       content: '';
       position: absolute;
-      width: 0;
-      height: 2px;
       bottom: 0;
-      left: 50%;
-      background-color: #e67e22;
-      transition: all 0.3s ease;
-    }
-
-    .nav-link:hover::after {
-      width: 100%;
       left: 0;
-    }
-    
-    .container {
-      background-color: #fff9f2;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #e67e22, #f39c12);
+      border-radius: 2px;
     }
 
-    a.btn-primary {
-      text-decoration: none !important;
-      color: white !important;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .highlight-text {
+      font-size: 1.1rem;
+      color: #34495e;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, rgba(230, 126, 34, 0.1), rgba(52, 73, 94, 0.05));
+      border-radius: 12px;
+      border-left: 4px solid #e67e22;
+    }
+
+    .education-card, .interests-card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transform: translateX(0);
+      animation: fadeInUp 0.6s ease-out 0.6s both;
+    }
+
+    .education-card:hover, .interests-card:hover {
+      transform: translateX(5px) translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-link {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: 600;
       transition: all 0.3s ease;
+      border-bottom: 1px solid transparent;
     }
 
-    a.btn-primary:hover,
-    a.btn-primary:focus,
-    a.btn-primary:active {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      color: white !important;
-      text-decoration: none !important;
+    .highlight-link:hover {
+      color: #d35400;
+      border-bottom: 1px solid #d35400;
+      text-decoration: none;
     }
 
-    a.btn-primary:active {
-      transform: translateY(1px);
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    .section-description {
+      font-size: 1rem;
+      color: #34495e;
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: 1.6;
     }
 
+    /* Glide Animations */
+    @keyframes slideInFromLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromRight {
+      0% {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
     @media (max-width: 991.98px) {
       .nav-link::after {
         display: none;
@@ -162,6 +502,43 @@
       .nav-item {
         margin: 0.5rem 0;
       }
+      
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .profile-card, .content-card {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        padding: 2rem;
+      }
+      
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      
+      .content-card {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Copyright Footer */
+    .copyright-footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      border-top: 1px solid #e0e0e0;
+      background: #fafafa;
+    }
+
+    .copyright-text {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+      font-weight: 400;
     }
   </style>
 </html>
