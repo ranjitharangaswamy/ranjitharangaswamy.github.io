@@ -20,7 +20,7 @@
   <body>
     <div class="video-background-container">
       <video autoplay loop muted playsinline class="video-background">
-        <source src="artvid.mp4" type="video/mp4">
+        <source src="images/artvid.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div class="video-overlay"></div>
@@ -40,19 +40,17 @@
       </div>
     </nav>
 
-    <main class="container pt-5">
-      <div class="row pt-5">
-        <div class="col-12 pt-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5 mb-4 d-flex flex-column align-items-center">
-              <img src="images/IMG_20161021_203844.jpg" class="img-fluid rounded shadow-sm mb-2" alt="Colorful painting by Ranjitha Naruganahalli Rangaswamy" style="max-height: 400px; object-fit: cover;">
-              <div class="text-center text-muted small">"Mandala art on a bookmark" (2016)</div> <p>Art has been therapeutic for me, where I express thoughts through shapes and timebox it on a small canvas.</p>
-            </div>
-            <div class="col-md-6 col-lg-5 mb-4 d-flex flex-column align-items-center">
-              <img src="images/IMG_20180614_072639.jpg" class="img-fluid rounded shadow-sm mb-2" alt="Nature-inspired artwork by Ranjitha Naruganahalli Rangaswamy" style="max-height: 400px; object-fit: cover;">
-              <div class="text-center text-muted small">"Nature-inspired artwork" (2018)</div> <p>I'm an amateur painter, as seen in the rough finishes of my work. I believe in art as an outlet to express internal chaos.</p>
-            </div>
-          </div>
+    <main class="art-content">
+      <div class="art-grid">
+        <div class="art-item">
+          <img src="images/IMG_20161021_203844.jpg" alt="Colorful painting by Ranjitha Naruganahalli Rangaswamy">
+          <div class="art-caption">"Mandala art on a bookmark" (2016)</div> 
+          <p class="art-description">Art has been therapeutic for me, where I express thoughts through shapes and timebox it on a small canvas.</p>
+        </div>
+        <div class="art-item">
+          <img src="images/IMG_20180614_072639.jpg" alt="Nature-inspired artwork by Ranjitha Naruganahalli Rangaswamy">
+          <div class="art-caption">"Nature-inspired artwork" (2018)</div> 
+          <p class="art-description">I'm an amateur painter, as seen in the rough finishes of my work. I believe in art as an outlet to express internal chaos.</p>
         </div>
       </div>
     </main>
@@ -66,7 +64,7 @@
   </body>
   <style>
     body {
-      background: linear-gradient(135deg, #fff9f2 0%, #fff5e6 50%, #fff9f2 100%);
+      background: transparent;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
     }
@@ -184,12 +182,87 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(135deg, #fff9f2cc 0%, #fff5e6cc 100%);
+      background: linear-gradient(135deg, rgba(255, 249, 242, 0.3) 0%, rgba(255, 245, 238, 0.3) 100%);
       z-index: 1;
     }
     main, nav, footer {
       position: relative;
       z-index: 2;
+    }
+    
+    /* Art Content Styles */
+    .art-content {
+      padding: 120px 20px 40px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    
+    .art-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .art-item:hover {
+      transform: translateY(-10px);
+    }
+    
+    .art-item img {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    
+    .art-caption {
+      color: black;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    
+    .art-description {
+      color: black;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .art-content {
+        padding: 100px 15px 30px;
+      }
+      
+      .art-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .art-item {
+        /* No padding needed for direct overlay */
+      }
+      
+      .art-item img {
+        height: 250px;
+      }
     }
   </style>
 </html>
