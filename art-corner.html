@@ -18,6 +18,13 @@
     <title>Art Corner - Ranjitha Rangaswamy</title>
   </head>
   <body>
+    <div class="video-background-container">
+      <video autoplay loop muted playsinline class="video-background">
+        <source src="artvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Ranjitha Rangaswamy</a>
@@ -148,6 +155,41 @@
       .nav-item {
         margin: 0.5rem 0;
       }
+    }
+    .video-background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .video-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.35;
+    }
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #fff9f2cc 0%, #fff5e6cc 100%);
+      z-index: 1;
+    }
+    main, nav, footer {
+      position: relative;
+      z-index: 2;
     }
   </style>
 </html>
